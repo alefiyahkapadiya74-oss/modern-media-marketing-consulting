@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Logo from '@/components/ui/Logo';
-import MobileMenu from './MobileMenu';
+import MobileMenu from '@/components/layout/MobileMenu';
 
 const navLinks = [
   { name: 'About', href: '#about' },
@@ -72,7 +72,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 rounded-lg text-forest-green hover:bg-brass-gold/10 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-forest-green hover:bg-brass-gold/10 transition-colors cursor-pointer"
               aria-label="Open Mobile Menu"
             >
               <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
