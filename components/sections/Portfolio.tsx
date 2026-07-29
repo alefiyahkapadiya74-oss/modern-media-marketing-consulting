@@ -11,17 +11,16 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
-const categories = ['All Work', 'Brand Strategy', 'Web Development', 'Media Buying'];
+const categories = ['Brand Strategy', 'Web Development', 'Media Buying'];
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState('All Work');
+  const [activeCategory, setActiveCategory] = useState('Brand Strategy');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const filteredProjects =
-    activeCategory === 'All Work'
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+  const filteredProjects = projects.filter(
+    (p) => p.category === activeCategory || (activeCategory === 'Brand Strategy' && p.category === 'Brand Strategy')
+  );
 
   useGSAP(
     () => {
@@ -42,7 +41,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section ref={containerRef} id="portfolio" className="py-28 bg-warm-ivory text-charcoal relative">
+      <section ref={containerRef} id="portfolio" className="py-24 bg-warm-ivory text-charcoal relative">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Section Header */}
           <div className="flex flex-col items-start mb-16">
@@ -64,7 +63,7 @@ export default function Portfolio() {
                 key={category}
                 type="button"
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2.5 rounded-full text-xs uppercase tracking-wider font-sans font-semibold transition-all duration-300 ${
+                className={`px-6 py-2.5 rounded-full text-xs uppercase tracking-wider font-sans font-semibold transition-all duration-300 cursor-pointer ${
                   activeCategory === category
                     ? 'bg-forest-green text-warm-ivory shadow-md'
                     : 'bg-white text-charcoal/70 hover:bg-brass-gold/10 hover:text-forest-green border border-brass-gold/20'
@@ -78,7 +77,7 @@ export default function Portfolio() {
           {/* Asymmetrical Bento Portfolio Grid */}
           <div className="portfolio-bento-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => {
-              const isLarge = index % 3 === 0;
+              const isLarge = index === 0;
 
               return (
                 <div

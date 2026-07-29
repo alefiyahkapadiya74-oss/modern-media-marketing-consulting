@@ -34,10 +34,10 @@ export default function Services() {
 
   return (
     <>
-      <section ref={containerRef} id="services" className="py-28 bg-warm-ivory text-charcoal relative">
+      <section ref={containerRef} id="services" className="py-24 bg-warm-ivory text-charcoal relative">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Section Header */}
-          <div className="flex flex-col items-start mb-20">
+          <div className="flex flex-col items-start mb-16">
             <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-3">
               02 / Strategic Suite & Storytelling
             </span>

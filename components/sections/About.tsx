@@ -119,13 +119,12 @@ export default function About() {
         opacity: 0,
         y: 50,
         scale: 0.95,
-        rotateX: 12,
         stagger: 0.16,
         duration: 0.95,
         ease: 'power3.out',
       });
 
-      // Animate "Why Leaders Choose Modern Media" Header
+      // Animate "Why Leaders Choose Modern Media" Header & Paragraph
       gsap.from('.why-leaders-header', {
         scrollTrigger: {
           trigger: '.why-leaders-section',
@@ -167,10 +166,10 @@ export default function About() {
   );
 
   return (
-    <section ref={containerRef} id="about" className="relative py-28 bg-warm-ivory text-charcoal overflow-hidden">
+    <section ref={containerRef} id="about" className="relative py-24 bg-warm-ivory text-charcoal overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-20">
+        <div className="flex flex-col items-start mb-16">
           <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-3">
             01 / Company Narrative
           </span>
@@ -180,7 +179,7 @@ export default function About() {
         </div>
 
         {/* Company Origin & Base Storytelling */}
-        <div className="about-intro-text grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
+        <div className="about-intro-text grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
           <div className="lg:col-span-6 font-serif text-2xl md:text-3xl text-forest-green/90 leading-relaxed">
             Headquartered in the prestige of <span className="text-brass-gold italic font-normal">Sharjah Publishing City Free Zone</span>, Modern Media & Marketing Consulting FZC serves as the premier strategic growth partner for visionary brands.
           </div>
@@ -195,11 +194,11 @@ export default function About() {
         </div>
 
         {/* Mission, Vision & Values 3-Card Grid */}
-        <div className="about-pillars-grid grid grid-cols-1 md:grid-cols-3 gap-8 mb-28">
+        <div className="about-pillars-grid grid grid-cols-1 md:grid-cols-3 gap-8 mb-24 items-stretch">
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="about-pillar-card group relative bg-white rounded-3xl p-8 md:p-10 shadow-md border border-brass-gold/20 hover:border-brass-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer"
+              className="about-pillar-card group relative bg-white rounded-3xl p-8 md:p-10 shadow-md border border-brass-gold/20 hover:border-brass-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer h-full"
             >
               {/* Animated Top Brass Gold Accent Line */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-brass-gold/30 group-hover:bg-brass-gold transition-colors duration-300" />
@@ -213,7 +212,7 @@ export default function About() {
                   <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold px-3 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
                     {pillar.subtitle}
                   </span>
-                  <div className="w-11 h-11 rounded-full bg-brass-gold/10 border border-brass-gold/30 flex items-center justify-center group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm">
+                  <div className="w-11 h-11 rounded-full bg-brass-gold/10 border border-brass-gold/30 flex items-center justify-center group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm shrink-0">
                     {pillar.icon}
                   </div>
                 </div>
@@ -230,7 +229,7 @@ export default function About() {
               </div>
 
               {/* Card Footer Indicator */}
-              <div className="pt-4 border-t border-brass-gold/15 flex items-center justify-between text-xs text-brass-gold font-mono font-semibold">
+              <div className="pt-4 border-t border-brass-gold/15 flex items-center justify-between text-xs text-brass-gold font-mono font-semibold mt-auto">
                 <span>Core Pillar</span>
                 <span className="group-hover:translate-x-1 transition-transform">
                   &rarr;
@@ -241,7 +240,7 @@ export default function About() {
         </div>
 
         {/* "Why Leaders Choose Modern Media" Section */}
-        <div className="why-leaders-section mb-24">
+        <div className="why-leaders-section mb-20">
           <div className="why-leaders-header flex flex-col items-start mb-12">
             <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-2">
               Competitive Advantage
@@ -249,6 +248,9 @@ export default function About() {
             <h3 className="font-serif text-3xl md:text-5xl font-bold text-forest-green">
               Why Leaders Choose Modern Media
             </h3>
+            <p className="font-sans text-base sm:text-lg text-charcoal/70 max-w-3xl font-light leading-relaxed mt-4">
+              Visionary regional enterprises partner with Modern Media & Marketing Consulting FZC to bridge creative audacity with institutional strategy. We combine deep UAE market intelligence with bespoke execution to guarantee long-term brand equity and enterprise growth.
+            </p>
           </div>
 
           <div className="about-features-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -282,7 +284,7 @@ export default function About() {
       </div>
 
       {/* Minimal Editorial Quote Banner */}
-      <div className="about-quote-banner w-full bg-forest-green text-warm-ivory py-20 px-6 md:px-12 mt-12 border-y border-brass-gold/30 relative overflow-hidden">
+      <div className="about-quote-banner w-full bg-forest-green text-warm-ivory py-16 px-6 md:px-12 border-y border-brass-gold/30 relative overflow-hidden">
         <div className="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-brass-gold/10 blur-3xl pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-4">
