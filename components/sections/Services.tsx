@@ -66,10 +66,10 @@ export default function Services() {
                   <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-brass-gold/5 blur-2xl group-hover:bg-brass-gold/15 transition-all duration-500 pointer-events-none" />
 
                   <div>
-                    {/* Category Tag & Arrow */}
+                    {/* Number Badge & Arrow */}
                     <div className="flex items-center justify-between mb-8">
                       <span className="font-mono text-xs text-brass-gold tracking-widest font-semibold px-3.5 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
-                        Executive Practice
+                        Domain {service.num}
                       </span>
                       <div className="w-11 h-11 rounded-full border border-brass-gold/30 flex items-center justify-center text-brass-gold group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm">
                         <svg className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,13 +94,13 @@ export default function Services() {
                     </p>
                   </div>
 
-                  {/* Footer Action */}
+                  {/* Footer Deliverable Counter & Interactive Action */}
                   <div className="pt-6 border-t border-brass-gold/15 flex items-center justify-between font-sans text-xs text-charcoal/60">
                     <span className="font-mono text-brass-gold font-semibold">
-                      Full Executive Scope
+                      {service.deliverables.length} Deliverables Included
                     </span>
                     <span className="font-semibold text-forest-green group-hover:text-brass-gold transition-colors flex items-center gap-1">
-                      Explore Details &rarr;
+                      Explore Story &rarr;
                     </span>
                   </div>
                 </div>

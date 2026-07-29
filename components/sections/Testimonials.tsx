@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { testimonials } from '@/data/testimonials';
 
 export default function Testimonials() {
@@ -86,7 +86,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={handlePrev}
                 aria-label="Previous Testimonial"
-                className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300"
+                className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300 cursor-pointer"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -103,31 +103,13 @@ export default function Testimonials() {
                 type="button"
                 onClick={handleNext}
                 aria-label="Next Testimonial"
-                className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300"
+                className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300 cursor-pointer"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
-          </div>
-        </div>
-
-        {/* Trust Metrics Strip */}
-        <div className="mt-20 pt-10 border-t border-brass-gold/20 flex flex-wrap items-center justify-around gap-8 text-center">
-          <div>
-            <span className="font-serif text-3xl font-bold text-brass-gold block mb-1">99%</span>
-            <span className="font-sans text-xs uppercase tracking-wider text-warm-ivory/70">Client Retention</span>
-          </div>
-          <div className="hidden sm:block text-brass-gold/40">•</div>
-          <div>
-            <span className="font-serif text-3xl font-bold text-brass-gold block mb-1">$50M+</span>
-            <span className="font-sans text-xs uppercase tracking-wider text-warm-ivory/70">Media Budgets Managed</span>
-          </div>
-          <div className="hidden sm:block text-brass-gold/40">•</div>
-          <div>
-            <span className="font-serif text-3xl font-bold text-brass-gold block mb-1">Sharjah</span>
-            <span className="font-sans text-xs uppercase tracking-wider text-warm-ivory/70">Publishing City HQ</span>
           </div>
         </div>
       </div>
