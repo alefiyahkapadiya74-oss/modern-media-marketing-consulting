@@ -2,6 +2,8 @@ import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
+import Process from '@/components/sections/Process';
+import Portfolio from '@/components/sections/Portfolio';
 
 export default function Home() {
   return (
@@ -11,28 +13,10 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <Process />
+        <Portfolio />
 
         {/* Section Anchor Placeholders for Remaining Phases */}
-        <section id="process" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
-          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">03 / Methodology</span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
-            Our 6-Step Process
-          </h2>
-          <p className="font-sans text-charcoal/70 max-w-2xl font-light leading-relaxed">
-            Discovery, Research, Strategy, Execution, Optimization, and Scalable Growth.
-          </p>
-        </section>
-
-        <section id="portfolio" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
-          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">04 / Work</span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
-            Portfolio & Case Studies
-          </h2>
-          <p className="font-sans text-charcoal/70 max-w-2xl font-light leading-relaxed">
-            Showcasing luxury digital implementations for premier regional and international clients.
-          </p>
-        </section>
-
         <section id="testimonials" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
           <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">05 / Endorsements</span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
