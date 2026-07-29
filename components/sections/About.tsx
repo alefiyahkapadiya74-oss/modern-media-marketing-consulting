@@ -15,18 +15,34 @@ const pillars = [
     subtitle: 'Strategic Intent',
     description:
       'Architecting transformative brand strategies, bespoke web platforms, and data-driven marketing campaigns for ambitious enterprises across the UAE and Gulf region.',
+    icon: (
+      <svg className="w-6 h-6 text-brass-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+      </svg>
+    ),
   },
   {
     title: 'Vision',
     subtitle: 'Global Excellence',
     description:
       'Setting the regional benchmark for Awwwards-grade design engineering, editorial storytelling, and sustainable business scalability.',
+    icon: (
+      <svg className="w-6 h-6 text-brass-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    ),
   },
   {
     title: 'Core Values',
     subtitle: 'Uncompromising Quality',
     description:
       'Rooted in creative mastery, strategic rigor, transparent collaboration, and absolute dedication to measurable return on investment.',
+    icon: (
+      <svg className="w-6 h-6 text-brass-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
   },
 ];
 
@@ -94,16 +110,18 @@ export default function About() {
         ease: 'power3.out',
       });
 
-      // Animate Pillars
+      // Animate Mission, Vision & Values Pillars Grid
       gsap.from('.about-pillar-card', {
         scrollTrigger: {
           trigger: '.about-pillars-grid',
           start: 'top 80%',
         },
         opacity: 0,
-        y: 45,
-        stagger: 0.15,
-        duration: 0.9,
+        y: 50,
+        scale: 0.95,
+        rotateX: 12,
+        stagger: 0.16,
+        duration: 0.95,
         ease: 'power3.out',
       });
 
@@ -181,17 +199,43 @@ export default function About() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="about-pillar-card bg-white rounded-2xl p-8 md:p-10 shadow-sm border-t-2 border-brass-gold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+              className="about-pillar-card group relative bg-white rounded-3xl p-8 md:p-10 shadow-md border border-brass-gold/20 hover:border-brass-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer"
             >
-              <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2 font-semibold">
-                {pillar.subtitle}
-              </span>
-              <h3 className="font-serif text-2xl md:text-3xl font-bold text-forest-green mb-4 group-hover:text-brass-gold transition-colors">
-                {pillar.title}
-              </h3>
-              <p className="font-sans text-sm md:text-base text-charcoal/75 leading-relaxed font-light">
-                {pillar.description}
-              </p>
+              {/* Animated Top Brass Gold Accent Line */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-brass-gold/30 group-hover:bg-brass-gold transition-colors duration-300" />
+
+              {/* Radial Light Flare Backdrop */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brass-gold/5 rounded-full blur-2xl group-hover:bg-brass-gold/15 transition-all duration-500 pointer-events-none" />
+
+              <div>
+                {/* Header Icon & Subtitle */}
+                <div className="flex items-center justify-between mb-8">
+                  <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold px-3 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
+                    {pillar.subtitle}
+                  </span>
+                  <div className="w-11 h-11 rounded-full bg-brass-gold/10 border border-brass-gold/30 flex items-center justify-center group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm">
+                    {pillar.icon}
+                  </div>
+                </div>
+
+                {/* Pillar Title */}
+                <h3 className="font-serif text-3xl font-bold text-forest-green mb-4 group-hover:text-brass-gold transition-colors">
+                  {pillar.title}
+                </h3>
+
+                {/* Pillar Description */}
+                <p className="font-sans text-sm md:text-base text-charcoal/75 leading-relaxed font-light mb-6">
+                  {pillar.description}
+                </p>
+              </div>
+
+              {/* Card Footer Indicator */}
+              <div className="pt-4 border-t border-brass-gold/15 flex items-center justify-between text-xs text-brass-gold font-mono font-semibold">
+                <span>Core Pillar</span>
+                <span className="group-hover:translate-x-1 transition-transform">
+                  &rarr;
+                </span>
+              </div>
             </div>
           ))}
         </div>
