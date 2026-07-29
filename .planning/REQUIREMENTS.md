@@ -30,13 +30,13 @@
 - [x] **SVC-02**: Service detail cards with interactive hover effects, subtle borders, and expanded detail views.
 
 ### Process Walkthrough
-- [ ] **PROC-01**: Interactive 6-step methodology showcase (Discovery, Research, Strategy, Execution, Optimization, Growth).
-- [ ] **PROC-02**: Horizontal or pinned scroll progress indicator for the 6 workflow steps using GSAP ScrollTrigger.
+- [x] **PROC-01**: Interactive 6-step methodology showcase (Discovery, Research, Strategy, Execution, Optimization, Growth).
+- [x] **PROC-02**: Horizontal or pinned scroll progress indicator for the 6 workflow steps using GSAP ScrollTrigger.
 
 ### Portfolio & Case Studies
-- [ ] **PORT-01**: High-impact Bento & Masonry portfolio grid displaying luxury project cards.
-- [ ] **PORT-02**: Image stacking, parallax, and zoom animations on hover/scroll for portfolio work.
-- [ ] **PORT-03**: Detailed Case Studies section detailing client challenge, solution, and growth metrics.
+- [x] **PORT-01**: High-impact Bento & Masonry portfolio grid displaying luxury project cards.
+- [x] **PORT-02**: Image stacking, parallax, and zoom animations on hover/scroll for portfolio work.
+- [x] **PORT-03**: Detailed Case Studies section detailing client challenge, solution, and growth metrics.
 
 ### Testimonials & Social Proof
 - [ ] **TEST-01**: Elegant testimonial showcase with custom quote typography and high-profile client cards.
@@ -82,11 +82,11 @@
 | ABT-03 | Phase 3 | Complete |
 | SVC-01 | Phase 3 | Complete |
 | SVC-02 | Phase 3 | Complete |
-| PROC-01 | Phase 4 | Pending |
-| PROC-02 | Phase 4 | Pending |
-| PORT-01 | Phase 4 | Pending |
-| PORT-02 | Phase 4 | Pending |
-| PORT-03 | Phase 4 | Pending |
+| PROC-01 | Phase 4 | Complete |
+| PROC-02 | Phase 4 | Complete |
+| PORT-01 | Phase 4 | Complete |
+| PORT-02 | Phase 4 | Complete |
+| PORT-03 | Phase 4 | Complete |
 | TEST-01 | Phase 5 | Pending |
 | TEST-02 | Phase 5 | Pending |
 | CONT-01 | Phase 5 | Pending |
