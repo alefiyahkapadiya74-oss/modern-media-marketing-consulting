@@ -48,9 +48,9 @@
 - [x] **CONT-03**: Interactive Google Maps embed with custom styled pin for agency headquarters.
 
 ### Animation & Motion Systems
-- [ ] **ANIM-01**: Lenis smooth scroll inertia physics configuration.
-- [ ] **ANIM-02**: GSAP ScrollTrigger pinning and parallax scroll effects across key sections.
-- [ ] **ANIM-03**: Micro-interactions (hover scale, subtle magnetic buttons, custom cursor option).
+- [x] **ANIM-01**: Lenis smooth scroll inertia physics configuration.
+- [x] **ANIM-02**: GSAP ScrollTrigger pinning and parallax scroll effects across key sections.
+- [x] **ANIM-03**: Micro-interactions (hover scale, subtle magnetic buttons, custom cursor option).
 
 ## v2 Requirements
 
@@ -92,9 +92,9 @@
 | CONT-01 | Phase 5 | Complete |
 | CONT-02 | Phase 5 | Complete |
 | CONT-03 | Phase 5 | Complete |
-| ANIM-01 | Phase 6 | Pending |
-| ANIM-02 | Phase 6 | Pending |
-| ANIM-03 | Phase 6 | Pending |
+| ANIM-01 | Phase 6 | Complete |
+| ANIM-02 | Phase 6 | Complete |
+| ANIM-03 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 27 total
