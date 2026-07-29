@@ -42,7 +42,7 @@ export default function Services() {
               02 / Strategic Suite & Storytelling
             </span>
             <h2 className="font-serif text-4xl sm:text-6xl font-bold text-forest-green max-w-3xl leading-[1.15]">
-              7 Specialized Domains of Enterprise Growth
+              Specialized Domains of Enterprise Growth
             </h2>
             <p className="font-sans text-base sm:text-lg text-charcoal/70 max-w-2xl font-light leading-relaxed mt-6">
               Our multidisciplinary consultancy combines market intelligence, bespoke digital engineering, performance media buying, and HR talent alignment.
@@ -66,10 +66,10 @@ export default function Services() {
                   <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-brass-gold/5 blur-2xl group-hover:bg-brass-gold/15 transition-all duration-500 pointer-events-none" />
 
                   <div>
-                    {/* Number Badge & Arrow */}
+                    {/* Category Tag & Arrow */}
                     <div className="flex items-center justify-between mb-8">
                       <span className="font-mono text-xs text-brass-gold tracking-widest font-semibold px-3.5 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
-                        Domain {service.num}
+                        Executive Practice
                       </span>
                       <div className="w-11 h-11 rounded-full border border-brass-gold/30 flex items-center justify-center text-brass-gold group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm">
                         <svg className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,13 +94,13 @@ export default function Services() {
                     </p>
                   </div>
 
-                  {/* Footer Deliverable Counter & Interactive Action */}
+                  {/* Footer Action */}
                   <div className="pt-6 border-t border-brass-gold/15 flex items-center justify-between font-sans text-xs text-charcoal/60">
                     <span className="font-mono text-brass-gold font-semibold">
-                      {service.deliverables.length} Deliverables Included
+                      Full Executive Scope
                     </span>
                     <span className="font-semibold text-forest-green group-hover:text-brass-gold transition-colors flex items-center gap-1">
-                      Explore Story &rarr;
+                      Explore Details &rarr;
                     </span>
                   </div>
                 </div>

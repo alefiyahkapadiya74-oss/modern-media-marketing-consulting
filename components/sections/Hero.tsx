@@ -102,11 +102,11 @@ export default function Hero() {
         {/* Hero Trust Metrics Strip */}
         <div className="hero-metrics-strip grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 pt-8 border-t border-brass-gold/20 w-full max-w-4xl text-center">
           <div>
-            <span className="font-serif text-2xl md:text-3xl font-bold text-forest-green block">7</span>
-            <span className="font-sans text-[11px] uppercase tracking-wider text-brass-gold font-medium">Core Domains</span>
+            <span className="font-serif text-2xl md:text-3xl font-bold text-forest-green block">Full Suite</span>
+            <span className="font-sans text-[11px] uppercase tracking-wider text-brass-gold font-medium">Consultancy</span>
           </div>
           <div>
-            <span className="font-serif text-2xl md:text-3xl font-bold text-forest-green block">6-Step</span>
+            <span className="font-serif text-2xl md:text-3xl font-bold text-forest-green block">Proven</span>
             <span className="font-sans text-[11px] uppercase tracking-wider text-brass-gold font-medium">Methodology</span>
           </div>
           <div>

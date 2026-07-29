@@ -13,14 +13,14 @@ const initialMessages: Message[] = [
   {
     id: 'welcome',
     sender: 'ai',
-    text: 'Marhaba! I am AIctor, the strategic AI assistant for Modern Media & Marketing Consulting FZC. How may I assist you with our agency services, regional methodology, or corporate base in Sharjah Publishing City Free Zone?',
+    text: 'Marhaba! I am AIctor, the strategic AI assistant for Modern Media & Marketing Consulting FZC. How may I assist you with our executive services, regional methodology, or corporate base in Sharjah Publishing City Free Zone?',
     timestamp: 'Just now',
   },
 ];
 
 const quickPrompts = [
   'What consultancy services do you offer?',
-  'Explain your 6-step methodology',
+  'Explain your strategic methodology',
   'Where is your headquarters located?',
   'Which service is right for my brand?',
   'Tell me about your portfolio case studies',
@@ -44,11 +44,11 @@ export default function AIctorAssistant() {
     const lower = userText.toLowerCase();
 
     if (lower.includes('service') || lower.includes('offer') || lower.includes('what do you do')) {
-      return 'Modern Media & Marketing Consulting FZC offers 7 core consultancy domains:\n\n1. Marketing Consultancy\n2. Media Buying & Acquisition\n3. Brand Strategy & Identity\n4. Web Development & Engineering\n5. Social Media Consultancy\n6. Design Consultancy\n7. HR Consulting & Talent Strategy\n\nClick any service card in our Services section to view detailed deliverables!';
+      return 'Modern Media & Marketing Consulting FZC offers a comprehensive suite of executive consultancy domains:\n\n• Marketing Consultancy & Growth Architecture\n• Performance Media Buying & Acquisition\n• Brand Strategy & Corporate Identity\n• Bespoke Web Development & Engineering\n• Social Media Consultancy & Reputation\n• Design Consultancy & Visual Identity\n• Executive HR Consulting & Organizational Strategy\n\nClick any service card in our Services section to explore our detailed executive scope!';
     }
 
     if (lower.includes('methodology') || lower.includes('process') || lower.includes('step')) {
-      return 'Our proven 6-Step Methodology guarantees strategic rigor:\n\n01 Discovery & Vision Alignment\n02 Market Research & Intelligence\n03 Brand Strategy & Blueprint\n04 Precision Execution\n05 Real-Time Optimization\n06 Scalable Enterprise Growth';
+      return 'Our strategic methodology guarantees analytical rigor and seamless execution:\n\n• Discovery & Vision Alignment\n• Market Intelligence & Competitor Audit\n• Brand Strategy & Architecture\n• Bespoke Digital & Media Execution\n• Continuous Optimization & Intelligence\n• Scalable Regional Enterprise Growth';
     }
 
     if (lower.includes('where') || lower.includes('location') || lower.includes('sharjah') || lower.includes('address') || lower.includes('headquarter')) {
