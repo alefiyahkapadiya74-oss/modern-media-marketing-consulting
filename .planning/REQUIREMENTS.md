@@ -6,9 +6,9 @@
 ## v1 Requirements
 
 ### Core System & Design Tokens
-- [ ] **SYS-01**: Design system setup with luxury color palette (#234038 Forest Green, #B88A44 Brass Gold, #F7F4EC Warm Ivory, White, Charcoal).
-- [ ] **SYS-02**: Typography integration featuring Playfair Display for headings and Inter for body copy.
-- [ ] **SYS-03**: Smooth scroll provider powered by Lenis integrated into global app layout.
+- [x] **SYS-01**: Design system setup with luxury color palette (#234038 Forest Green, #B88A44 Brass Gold, #F7F4EC Warm Ivory, White, Charcoal).
+- [x] **SYS-02**: Typography integration featuring Playfair Display for headings and Inter for body copy.
+- [x] **SYS-03**: Smooth scroll provider powered by Lenis integrated into global app layout.
 
 ### Navigation & Header
 - [ ] **NAV-01**: Transparent navigation bar with smooth scroll background state changes on scroll down.
@@ -68,9 +68,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SYS-01 | Phase 1 | Pending |
-| SYS-02 | Phase 1 | Pending |
-| SYS-03 | Phase 1 | Pending |
+| SYS-01 | Phase 1 | Complete |
+| SYS-02 | Phase 1 | Complete |
+| SYS-03 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |
