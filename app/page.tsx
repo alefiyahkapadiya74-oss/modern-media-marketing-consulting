@@ -1,5 +1,7 @@
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Services from '@/components/sections/Services';
 
 export default function Home() {
   return (
@@ -7,28 +9,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <About />
+        <Services />
 
-        {/* Section Anchor Placeholders for Navigation & Smooth Scroll Validation */}
-        <section id="about" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
-          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">01 / Story</span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
-            About Modern Media & Marketing
-          </h2>
-          <p className="font-sans text-charcoal/70 max-w-2xl font-light leading-relaxed">
-            Headquartered in Sharjah Publishing City Free Zone, we partner with industry leaders to design and deploy bespoke creative and strategic solutions.
-          </p>
-        </section>
-
-        <section id="services" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
-          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">02 / Offerings</span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
-            Our Service Suite
-          </h2>
-          <p className="font-sans text-charcoal/70 max-w-2xl font-light leading-relaxed">
-            From strategic marketing consultancy to executive HR consulting, discover our end-to-end agency capabilities.
-          </p>
-        </section>
-
+        {/* Section Anchor Placeholders for Remaining Phases */}
         <section id="process" className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-brass-gold/20">
           <span className="text-xs uppercase tracking-widest text-brass-gold font-mono block mb-2">03 / Methodology</span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-forest-green mb-4">
