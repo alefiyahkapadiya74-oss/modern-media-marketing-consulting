@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import Logo from '@/components/ui/Logo';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -35,21 +36,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <div className="fixed inset-0 z-50 bg-forest-green text-warm-ivory flex flex-col justify-between p-8 md:p-12 animate-in fade-in duration-300">
       {/* Top Header Bar inside Curtain */}
       <div className="flex items-center justify-between border-b border-brass-gold/20 pb-6">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg border border-brass-gold bg-brass-gold/20 flex items-center justify-center text-brass-gold font-serif font-bold text-base">
-            M&M
-          </div>
-          <span className="font-serif font-semibold text-lg text-warm-ivory">
-            Modern Media & Marketing
-          </span>
-        </div>
+        <a href="#" onClick={onClose}>
+          <Logo size="md" variant="light" />
+        </a>
 
         {/* Close Button */}
         <button
           type="button"
           onClick={onClose}
           aria-label="Close Menu"
-          className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300"
+          className="w-11 h-11 rounded-full border border-brass-gold/40 flex items-center justify-center text-brass-gold hover:bg-brass-gold hover:text-white transition-all duration-300 cursor-pointer"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

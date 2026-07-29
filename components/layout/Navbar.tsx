@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Logo from '@/components/ui/Logo';
 import MobileMenu from './MobileMenu';
 
 const navLinks = [
@@ -15,7 +16,6 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,19 +40,9 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          {/* Brand Identity: Monogram + Editorial Wordmark */}
-          <a href="#" className="flex items-center gap-3.5 group">
-            <div className="w-10 h-10 rounded-xl border border-brass-gold/40 bg-brass-gold/10 flex items-center justify-center text-brass-gold font-serif font-bold text-lg transition-transform duration-300 group-hover:scale-105 group-hover:bg-brass-gold group-hover:text-white shadow-sm">
-              M&M
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="font-serif font-bold text-forest-green text-lg md:text-xl tracking-tight leading-none">
-                Modern Media & Marketing
-              </span>
-              <span className="font-sans text-[10px] tracking-widest text-brass-gold uppercase font-medium mt-1">
-                Consulting FZC • UAE
-              </span>
-            </div>
+          {/* New Luxury Brand Logo Component */}
+          <a href="#">
+            <Logo size="md" variant="dark" />
           </a>
 
           {/* Desktop Navigation Links */}
@@ -73,7 +63,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="#contact"
-              className="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-brass-gold text-brass-gold hover:bg-brass-gold hover:text-white font-sans text-xs tracking-wider uppercase font-semibold transition-all duration-300 shadow-sm"
+              className="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-brass-gold text-brass-gold hover:bg-brass-gold hover:text-white font-sans text-xs tracking-wider uppercase font-semibold transition-all duration-300 shadow-sm cursor-pointer"
             >
               Get in Touch
             </a>

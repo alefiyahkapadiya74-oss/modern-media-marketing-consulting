@@ -1,5 +1,7 @@
 'use client';
 
+import Logo from '@/components/ui/Logo';
+
 export default function Contact() {
   return (
     <section id="contact" className="py-28 bg-warm-ivory text-charcoal relative">
@@ -67,17 +69,7 @@ export default function Contact() {
             {/* Headquarters Card */}
             <div className="bg-white rounded-3xl p-8 sm:p-10 border border-brass-gold/20 shadow-xl space-y-6">
               <div className="flex items-center gap-3.5 border-b border-brass-gold/20 pb-5">
-                <div className="w-10 h-10 rounded-xl border border-brass-gold bg-brass-gold/10 flex items-center justify-center text-brass-gold font-serif font-bold text-lg">
-                  M&M
-                </div>
-                <div>
-                  <h4 className="font-serif font-bold text-xl text-forest-green">
-                    Headquarters
-                  </h4>
-                  <span className="font-sans text-xs text-brass-gold uppercase tracking-wider font-medium">
-                    Sharjah Publishing City Free Zone
-                  </span>
-                </div>
+                <Logo size="md" variant="dark" />
               </div>
 
               <div className="space-y-4 font-sans text-sm text-charcoal/80 font-light">
