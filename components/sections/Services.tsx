@@ -17,15 +17,15 @@ export default function Services() {
 
   useGSAP(
     () => {
-      gsap.from('.service-bento-card', {
+      gsap.from('.service-story-card', {
         scrollTrigger: {
-          trigger: '.services-bento-grid',
+          trigger: '.services-story-grid',
           start: 'top 80%',
         },
         opacity: 0,
-        y: 40,
+        y: 45,
         stagger: 0.12,
-        duration: 0.8,
+        duration: 0.9,
         ease: 'power3.out',
       });
     },
@@ -39,37 +39,39 @@ export default function Services() {
           {/* Section Header */}
           <div className="flex flex-col items-start mb-20">
             <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-3">
-              02 / Strategic Suite
+              02 / Strategic Suite & Storytelling
             </span>
             <h2 className="font-serif text-4xl sm:text-6xl font-bold text-forest-green max-w-3xl leading-[1.15]">
-              Full-Spectrum Consultancy for Enterprise Growth
+              7 Specialized Domains of Enterprise Growth
             </h2>
             <p className="font-sans text-base sm:text-lg text-charcoal/70 max-w-2xl font-light leading-relaxed mt-6">
-              Our 7 core business and media consultancy domains combine strategic intelligence, bespoke creative engineering, and executive HR management.
+              Our multidisciplinary consultancy combines market intelligence, bespoke digital engineering, performance media buying, and HR talent alignment.
             </p>
           </div>
 
-          {/* Asymmetrical Bento Grid */}
-          <div className="services-bento-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Asymmetrical Bento Grid with Elevated Depth */}
+          <div className="services-story-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
-              // Highlight first and fourth cards with larger span for asymmetrical Bento feel
               const isLarge = index === 0 || index === 3;
 
               return (
                 <div
                   key={service.id}
                   onClick={() => setSelectedService(service)}
-                  className={`service-bento-card bg-white rounded-2xl p-8 md:p-10 border border-brass-gold/20 shadow-sm hover:border-brass-gold hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col justify-between group ${
+                  className={`service-story-card bg-white rounded-3xl p-8 md:p-10 border border-brass-gold/20 shadow-md hover:border-brass-gold hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 cursor-pointer flex flex-col justify-between group relative overflow-hidden ${
                     isLarge ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'
                   }`}
                 >
+                  {/* Subtle Background Accent Glow */}
+                  <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-brass-gold/5 blur-2xl group-hover:bg-brass-gold/15 transition-all duration-500 pointer-events-none" />
+
                   <div>
                     {/* Number Badge & Arrow */}
                     <div className="flex items-center justify-between mb-8">
-                      <span className="font-mono text-xs text-brass-gold tracking-widest font-semibold px-3 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
-                        {service.num}
+                      <span className="font-mono text-xs text-brass-gold tracking-widest font-semibold px-3.5 py-1 rounded-full bg-brass-gold/10 border border-brass-gold/30">
+                        Domain {service.num}
                       </span>
-                      <div className="w-10 h-10 rounded-full border border-brass-gold/30 flex items-center justify-center text-brass-gold group-hover:bg-brass-gold group-hover:text-white transition-all duration-300">
+                      <div className="w-11 h-11 rounded-full border border-brass-gold/30 flex items-center justify-center text-brass-gold group-hover:bg-brass-gold group-hover:text-white transition-all duration-300 shadow-sm">
                         <svg className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -94,11 +96,11 @@ export default function Services() {
 
                   {/* Footer Deliverable Counter & Interactive Action */}
                   <div className="pt-6 border-t border-brass-gold/15 flex items-center justify-between font-sans text-xs text-charcoal/60">
-                    <span className="font-mono text-brass-gold font-medium">
+                    <span className="font-mono text-brass-gold font-semibold">
                       {service.deliverables.length} Deliverables Included
                     </span>
                     <span className="font-semibold text-forest-green group-hover:text-brass-gold transition-colors flex items-center gap-1">
-                      View Details &rarr;
+                      Explore Story &rarr;
                     </span>
                   </div>
                 </div>
