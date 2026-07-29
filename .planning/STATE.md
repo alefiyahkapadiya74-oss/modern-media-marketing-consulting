@@ -5,14 +5,14 @@ milestone_name: milestone
 current_phase: 5
 current_phase_name: Polish, Motion Tuning & Launch Readiness
 status: complete
-stopped_at: Phase 6 context gathered
-last_updated: "2026-07-29T10:19:58.275Z"
+stopped_at: Phase 6 planned
+last_updated: "2026-07-29T10:24:02.881Z"
 last_activity: 2026-07-29
 last_activity_desc: Phase 5 execution complete
 progress:
   total_phases: 6
   completed_phases: 5
-  total_plans: 5
+  total_plans: 6
   completed_plans: 5
 ---
 
@@ -81,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-07-29T10:19:58.262Z
-Stopped at: Phase 6 context gathered
-Resume file: .planning/phases/06-gsap-scrolltrigger-motion-polish-performance-tuning/06-CONTEXT.md
+Last session: 2026-07-29T10:24:02.858Z
+Stopped at: Phase 6 planned
+Resume file: .planning/phases/06-gsap-scrolltrigger-motion-polish-performance-tuning/06-01-PLAN.md
