@@ -11,14 +11,12 @@ interface MobileMenuProps {
 const navLinks = [
   { name: 'About Us', href: '#about', num: '01' },
   { name: 'Services Suite', href: '#services', num: '02' },
-  { name: 'Our Process', href: '#process', num: '03' },
-  { name: 'Portfolio Work', href: '#portfolio', num: '04' },
-  { name: 'Client Reviews', href: '#testimonials', num: '05' },
-  { name: 'Contact Agency', href: '#contact', num: '06' },
+  { name: 'Our Methodology', href: '#process', num: '03' },
+  { name: 'How We Partner', href: '#engagement', num: '04' },
+  { name: 'Request Consultation', href: '#contact', num: '05' },
 ];
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
-  // Prevent body scroll when mobile menu curtain is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -53,7 +51,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </button>
       </div>
 
-      {/* Main Navigation Links */}
+      {/* Navigation Links with Numbers */}
       <nav className="flex flex-col gap-6 my-auto">
         {navLinks.map((link) => (
           <a
@@ -75,17 +73,17 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       {/* Bottom Footer Info inside Curtain */}
       <div className="pt-6 border-t border-brass-gold/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-sans text-xs text-warm-ivory/60">
         <div className="flex flex-col">
-          <span className="text-brass-gold font-semibold uppercase tracking-wider">Agency Headquarters</span>
+          <span className="text-brass-gold font-semibold uppercase tracking-wider">Agency Base</span>
           <span>Sharjah Publishing City Free Zone • UAE</span>
         </div>
 
         <div className="flex flex-col sm:text-right">
-          <a href="mailto:info@modernmedia.ae" className="hover:text-brass-gold transition-colors">
-            info@modernmedia.ae
+          <a href="mailto:consulting@modernmedia.ae" className="hover:text-brass-gold transition-colors font-mono">
+            consulting@modernmedia.ae
           </a>
-          <a href="tel:+97160000000" className="hover:text-brass-gold transition-colors">
-            +971 6 000 0000
-          </a>
+          <span className="text-warm-ivory/50">
+            Mon – Fri: 9:00 AM – 6:00 PM GST
+          </span>
         </div>
       </div>
     </div>

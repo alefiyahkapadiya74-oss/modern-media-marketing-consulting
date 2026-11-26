@@ -7,9 +7,8 @@ import MobileMenu from '@/components/layout/MobileMenu';
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
-  { name: 'Process', href: '#process' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Methodology', href: '#process' },
+  { name: 'How We Partner', href: '#engagement' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -35,12 +34,12 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-in-out ${
           isScrolled
-            ? 'bg-warm-ivory/85 backdrop-blur-md border-b border-brass-gold/20 shadow-sm py-4'
+            ? 'bg-warm-ivory/90 backdrop-blur-md border-b border-brass-gold/20 shadow-sm py-4'
             : 'bg-transparent py-6'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          {/* New Luxury Brand Logo Component */}
+          {/* Brand Logo Component */}
           <a href="#">
             <Logo size="md" variant="dark" />
           </a>
@@ -65,7 +64,7 @@ export default function Navbar() {
               href="#contact"
               className="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-brass-gold text-brass-gold hover:bg-brass-gold hover:text-white font-sans text-xs tracking-wider uppercase font-semibold transition-all duration-300 shadow-sm cursor-pointer"
             >
-              Get in Touch
+              Request Consultation
             </a>
 
             {/* Mobile Hamburger Menu Toggle Button */}
@@ -83,7 +82,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Fullscreen Mobile Navigation Menu Overlay */}
+      {/* Slide-out Mobile Navigation Curtain */}
       <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
     </>
   );

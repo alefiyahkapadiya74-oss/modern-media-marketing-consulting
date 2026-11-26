@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "modern-media-marketing-consulting",
+  "compatibility_date": "2026-11-23",
+  // Static export (next.config.js output: 'export') — serve ./out as plain files, no server.
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}

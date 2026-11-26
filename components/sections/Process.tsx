@@ -85,8 +85,8 @@ export default function Process() {
             start: 'top 85%',
           },
           opacity: 0,
-          y: 40,
-          duration: 0.8,
+          y: 35,
+          duration: 0.7,
           ease: 'power3.out',
         });
       });
@@ -95,69 +95,69 @@ export default function Process() {
   );
 
   return (
-    <section ref={containerRef} id="process" className="py-28 bg-warm-ivory text-charcoal relative">
+    <section ref={containerRef} id="process" className="py-16 md:py-20 bg-warm-ivory text-charcoal relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-20">
-          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-3">
+        <div className="flex flex-col items-start mb-10 md:mb-12">
+          <span className="text-xs uppercase tracking-widest text-brass-gold font-mono font-semibold mb-2">
             03 / Our Methodology
           </span>
-          <h2 className="font-serif text-4xl sm:text-6xl font-bold text-forest-green max-w-3xl leading-[1.15]">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-forest-green max-w-3xl leading-[1.15]">
             A Proven 6-Step Framework for Strategic Impact
           </h2>
-          <p className="font-sans text-base sm:text-lg text-charcoal/70 max-w-2xl font-light leading-relaxed mt-6">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-charcoal/70 max-w-2xl font-light leading-relaxed mt-4">
             From initial discovery in Sharjah Free Zone to enterprise market dominance across the GCC, our disciplined workflow ensures measurable returns.
           </p>
         </div>
 
         {/* Vertical Split Layout with Pinned Line */}
-        <div className="process-steps-container relative grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="process-steps-container relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left Column: Pinned Intro Badge & Overview */}
-          <div className="lg:col-span-4 lg:sticky lg:top-32 self-start space-y-6 hidden lg:block">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brass-gold/30 bg-brass-gold/10 text-brass-gold text-xs tracking-widest uppercase font-semibold">
+          <div className="lg:col-span-4 lg:sticky lg:top-28 self-start space-y-4 hidden lg:block">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-brass-gold/30 bg-brass-gold/10 text-brass-gold text-xs tracking-widest uppercase font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-brass-gold animate-pulse" />
               Disciplined Agency Workflow
             </div>
-            <h3 className="font-serif text-3xl font-bold text-forest-green">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-forest-green">
               Precision in Every Phase
             </h3>
-            <p className="font-sans text-sm text-charcoal/75 font-light leading-relaxed">
+            <p className="font-sans text-xs sm:text-sm text-charcoal/75 font-light leading-relaxed">
               We eliminate guesswork with transparent milestones, rigorous quality assurance, and real-time reporting.
             </p>
           </div>
 
           {/* Right Column: 6 Methodology Steps with Vertical Progress Indicator */}
-          <div className="lg:col-span-8 relative pl-6 md:pl-10">
+          <div className="lg:col-span-8 relative pl-5 md:pl-8">
             {/* Vertical Progress Bar Container */}
-            <div className="absolute left-0 top-4 bottom-4 w-1 bg-brass-gold/20 rounded-full overflow-hidden">
+            <div className="absolute left-0 top-3 bottom-3 w-1 bg-brass-gold/20 rounded-full overflow-hidden">
               <div className="process-progress-fill w-full h-0 bg-brass-gold transition-all duration-100" />
             </div>
 
-            {/* Step Cards List */}
-            <div className="space-y-12">
+            {/* Step Cards List with Compact, Balanced Spacing */}
+            <div className="space-y-4 sm:space-y-5">
               {steps.map((step) => (
                 <div
                   key={step.num}
-                  className="process-step-card bg-white rounded-2xl p-8 md:p-10 border border-brass-gold/20 shadow-sm hover:border-brass-gold hover:shadow-xl transition-all duration-300 relative group"
+                  className="process-step-card bg-white rounded-2xl p-5 sm:p-7 md:p-8 border border-brass-gold/20 shadow-sm hover:border-brass-gold hover:shadow-xl transition-all duration-300 relative group"
                 >
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-3">
                     <span className="font-mono text-xs text-brass-gold tracking-widest uppercase font-semibold">
                       {step.tagline}
                     </span>
-                    <span className="font-serif font-bold text-3xl text-brass-gold/40 group-hover:text-brass-gold transition-colors">
+                    <span className="font-serif font-bold text-2xl sm:text-3xl text-brass-gold/40 group-hover:text-brass-gold transition-colors">
                       {step.num}
                     </span>
                   </div>
 
-                  <h4 className="font-serif text-2xl md:text-3xl font-bold text-forest-green mb-4 group-hover:text-brass-gold transition-colors">
+                  <h4 className="font-serif text-xl sm:text-2xl font-bold text-forest-green mb-2 group-hover:text-brass-gold transition-colors">
                     {step.title}
                   </h4>
 
-                  <p className="font-sans text-sm md:text-base text-charcoal/75 leading-relaxed font-light mb-6">
+                  <p className="font-sans text-xs sm:text-sm md:text-base text-charcoal/75 leading-relaxed font-light mb-4">
                     {step.description}
                   </p>
 
-                  <div className="pt-4 border-t border-brass-gold/15 flex items-center justify-between font-sans text-xs">
+                  <div className="pt-3 border-t border-brass-gold/15 flex flex-col sm:flex-row sm:items-center justify-between font-sans text-xs gap-1">
                     <span className="text-charcoal/60">Key Deliverable:</span>
                     <span className="font-semibold text-forest-green font-mono">
                       {step.deliverable}
