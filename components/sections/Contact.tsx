@@ -173,6 +173,7 @@ export default function Contact() {
                     <input
                       type="text"
                       required
+                      maxLength={80}
                       placeholder="e.g. Tariq Al-Hashimi"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
@@ -187,6 +188,7 @@ export default function Contact() {
                     <input
                       type="text"
                       required
+                      maxLength={100}
                       placeholder="e.g. Al Hashimi Holdings"
                       value={companyName}
                       onChange={(e) => setCompanyName(e.target.value)}
@@ -201,6 +203,7 @@ export default function Contact() {
                     <input
                       type="email"
                       required
+                      maxLength={100}
                       placeholder="name@company.ae"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -214,6 +217,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="tel"
+                      maxLength={30}
                       placeholder="+971 50 123 4567"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
@@ -229,6 +233,7 @@ export default function Contact() {
                   </label>
                   <textarea
                     rows={3}
+                    maxLength={1000}
                     placeholder="Briefly describe your company's immediate objectives, desired launch timeline, and any specific requirements..."
                     value={projectBrief}
                     onChange={(e) => setProjectBrief(e.target.value)}
